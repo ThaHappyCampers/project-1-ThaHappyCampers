@@ -12,13 +12,23 @@ dimes = 10
 nickles = 5
 pennies = 1
 
-answer_1 = coins // quarters
-remainder_1 = coins % quarters
-answer_2 = remainder_1 // dimes
-remainder_2 = coins % dimes
-answer_3 = remainder_2 // nickles
-remainder_3 = coins % nickles
-answer_4 = remainder_3 // pennies
+answer_1 = (coins // quarters)
+# 87 / 25 = 3
+remainder_1 = (coins % quarters)
+# 87 / 25 = 12(R1)
+
+answer_2 = (remainder_1 // dimes)
+# 12(R1) / 10 = 1
+remainder_2 = (remainder_1 % dimes)
+# 12 / 10 = 1(R2)
+
+answer_3 = (remainder_2 // nickles)
+# 7(R2) / 5 = 1
+remainder_3 = (remainder_2 % nickles)
+# 2 / 5 = 0(R2)
+
+answer_4 = (remainder_3 // pennies)
+# 2(R3) / 1 = 2
 
 print("Your change will be:")
 print("q:", answer_1)
