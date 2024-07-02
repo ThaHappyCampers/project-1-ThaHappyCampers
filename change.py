@@ -31,7 +31,7 @@ answer_4 = (remainder_3 // pennies)
 # 2(R3) / 1 = 2
 
 print("Your change will be:")
-print("q:", answer_1)
-print("d:", answer_2)
-print("n:", answer_3)
-print("p:", answer_4)
+print("Q:", answer_1)
+print("D:", answer_2)
+print("N:", answer_3)
+print("P:", answer_4)
