@@ -8,11 +8,11 @@
 x = int(input("How many integers would you like to enter?"))
 print("Please enter ", x," integers.")
 
-first_v = input()
+first_v = int(input())
 max = first_v
 min = first_v
 for num in range(1, x):
-    second_v = input()
+    second_v = int(input())
     if second_v > max:
         max = second_v
     if second_v < min:
